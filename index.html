@@ -2,9 +2,65 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/starprocolor.min.css">
 	<title>StarProColor C. A</title>
 </head>
 <body>
-	
+	<div class="container" style="padding-top:40px;">
+		<div class="row animated fadeInDown">
+			<center><img src="diseno/logo.png" class="img-responsive"></center>
+		</div>
+		<div class="row animated bounceIn" style="text-align:center; padding-top: 30px; ">
+			<div class="timer-area">
+				<ul id="countdown">
+					<li> <span class="days">00</span>
+						<p class="timeRefDays">Días</p>
+					</li>
+					<li> <span class="hours">00</span>
+						<p class="timeRefHours">Horas</p>
+					</li>
+					<li> <span class="minutes">00</span>
+						<p class="timeRefMinutes">Minutos</p>
+					</li>
+					<li> <span class="seconds">00</span>
+						<p class="timeRefSeconds">Segundos</p>
+					</li>
+				</ul>
+			</div>
+		</div>	
+		<div class="row animated fadeIn" style="text-align:center; padding-top: 20px;">
+			<a href="https://www.instagram.com/starprocolor/" data-toggle="tooltip" title="@starprocolor" target="_blank">
+				<i class="fa fa-instagram fa-2x ico" aria-hidden="true"></i>
+			</a>
+			<a href="#" data-toggle="tooltip" title="@starprocolor">
+				<i class="fa fa-twitter fa-2x ico" aria-hidden="true"></i>
+			</a>
+			<a href="#" data-toggle="tooltip" title="www.facebook.com/starprocolor">
+				<i class="fa fa-facebook-official fa-2x ico" aria-hidden="true"></i>
+			</a>
+			<a href="#" data-toggle="tooltip" title="info@starprocolor.com.ve">
+				<i class="fa fa-envelope fa-2x ico" aria-hidden="true"></i>
+			</a>
+			<a href="#" data-toggle="tooltip" title="+58-0000-00-00"><i class="fa fa-mobile fa-2x ico" aria-hidden="true"></i></a>
+		</div>
+	</div>
 </body>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/countdown.js"></script>
+	<script src="https://use.fontawesome.com/e9d6ef542b.js"></script>
+	<script>
+		$(function(){
+			$('[data-toggle="tooltip"]').tooltip(); 
+			$("#countdown").countdown({
+				date: "22 October 2016 12:00:00",
+				format: "on"
+			},
+			function() {
+			});
+		});
+	</script>
 </html>
